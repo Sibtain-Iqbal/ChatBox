@@ -17,12 +17,14 @@ const ChatBox = () => {
 
   return (
     <div className="chat-box">
+
       <div className="messages">
         {messages.map((message, index) => (
           <div key={index} className={message.sender === 'user' ? 'user-message' : 'other-message'}>
             {message.text}
           </div>
         ))}
+
       </div>
       <div className="input-box">
         <input
